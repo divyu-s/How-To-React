@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Into to React</title>
+    <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.8.3/babel.js"></script>
+</head>
+<body>
+    <div id="root">
+    </div>
+</body>
+<script type="text/babel">
+//In vanilla Js
+const node  = document.getElementById("root");
+// function tick(){
+//     const time = new Date().toLocaleTimeString();
+//     node.innerHTML = `<div>${time}</div><div>Static Content </div>`;
+// }
+// setInterval(tick,1000)
+//Example intput with React
+//To upadate it every second
+function tick(){
+    const time = new Date().toLocaleTimeString();
+    const element = (
+        <>
+        <div>
+        <div>{time}</div>
+        </div>
+        <div>Static Content</div>
+        </>
+    );
+    ReactDOM.render(element,node);
+}
+setInterval(tick,1000)
+
+
+</script>
+</html>
