@@ -26,15 +26,15 @@
        //self closing tags
        //const element =( <div className={myClassName} children={children}> Hello World</div>);
        //spreading props
-       const children = "Hello World";
-       const className = "container";
-       const props = {
-           children,
-           className
-       };
-       console.log({...props})
+      //  const children = "Hello World";
+      //  const className = "container";
+      //  const props = {
+      //      children,
+      //      className
+      //  };
+      //  console.log({...props})
        const element = <div id="app-root" {...props} className="not-container"></div>
-       console.log(element)
+      //  console.log(element)
        ReactDOM.render(element,node);
 </script>
 </html>
